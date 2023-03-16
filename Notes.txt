@@ -1,3 +1,6 @@
 compute our own stopwords?
 Special tokens for tenses?
-feature engineering 
+feature engineering
+
+save data with pickle - important for performance of loading
+ 
