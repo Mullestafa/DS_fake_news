@@ -7,3 +7,5 @@ glove.6B.50d.txt
 data/news_cleaned_2018_02_13.csv
 glove.6B.50d.txt
 glove.6B.zip
+fake_news_cleaned.csv
+fake_news_cleaned.hdf
