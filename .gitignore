@@ -9,3 +9,7 @@ glove.6B.50d.txt
 glove.6B.zip
 fake_news_cleaned.csv
 fake_news_cleaned.hdf
+fake_news_cleaned_filtered.csv
+fake_news_cleaned_tokenized.csv
+fake_news_cleaned_tokenized_filtered.pkl
+vocab.pkl
