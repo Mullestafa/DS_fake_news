@@ -21,3 +21,13 @@ Models/Pytorch_native_approach/tf-idf-100.pth
 news_cleaned_2018_02_13.csv
 cnn_model.h5
 tokenizer.pickle
+cnn_model_b.h5
+liar_dataset.zip
+Models/tf-idf_experimental_model/tf-idf-100.pth
+Models/tf-idf_experimental_model/tf-idf-10.pth
+Models/tf-idf_experimental_model/2_tf-idf-20.pth
+news_sample.csv
+NLP_notebook.ipynb
+NLP_notebook.ipynb
+tokenizer_b.pickle
+train.tsv
