@@ -31,7 +31,6 @@ Python Dependencies (Python 3.9.13 was used for the project):
   - gensim
   - pytorch
   - keras
-  - 
 
 NLTK Data Dependencies:
   - stopwords
@@ -43,7 +42,7 @@ Other Dependencies
     - https://github.com/mmihaltz/word2vec-GoogleNews-vectors
   
 # How do I execute the code?
-Either download the preprocessed data from above or run the notebooks under the preprocessing folder as followed: Run check-for-bad-lines.py with news_cleaned_2018_02_13.csv(Is not cleaned). Then run remove_bad_lines.py with 
+Either download the preprocessed data from above or run the notebooks under the preprocessing folder as followed: Run check-for-bad-lines.py with news_cleaned_2018_02_13.csv(Is not cleaned) to get a parquet file. Then run remove_bad_lines.py with news_cleaned_2018_02_13.csv(Is not cleaned) and the parquet file to get fake_news_cleaned.csv. Then run process_content.ipynb with fake_news_cleaned.csv to get fake_news_cleaned_filtered.csv.
 
 
 Run the baseline-models.ipynb under models with the three files from preprocessing in the folder: Vocab.pkl named as file.pkl, fake_news_cleaned.csv, and fake_news_cleaned_filtered.csv.
