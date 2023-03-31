@@ -19,12 +19,18 @@ Therefore we provide links to download several large files that where used durin
   
   
 Python Dependencies:
-  - clean-desk
+  - clean-text
   - scikit-learn
   - unicode
   - nltk
+  - numpy
+  - pandas
   - dask
   - dask[diagnostics]
+  - matplotlib
+  - gensim
+  - pytorch
+  - keras
 
 NLTK Data Dependencies:
   - stopwords
