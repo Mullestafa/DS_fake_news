@@ -1,19 +1,17 @@
+bad_rows = []
+
+# load in csv file with csv reader
+import csv
+with open('E:/ML/fake_news_data/news.csv/news_cleaned_2018_02_13.csv', 'r') as f:
+    reader = csv.reader(f)
+    for i, row in enumerate(reader):
+        # check if first column is int and if there are 17 columns
+        if not row[0].isdigit() or len(row) != 17:
+            print('bad row at row {}'.format(i))
+            bad_rows.append(i)
+
+# save bad rows to parquet file
 import pandas as pd
-# check csv file for bad lines
-chunksize = 10000
-for i, chunk in enumerate(pd.read_csv('E:/ML/fake_news_data/news.csv/news_cleaned_2018_02_13.csv', chunksize=chunksize, on_bad_lines='warn', engine='python')):
-    # try saving chunk to temp.csv
-    print('row {}'.format(i*chunksize))
-    try:
-        # save to file. Append if file exists, otherwise create new file
-        if i == 0:
-            chunk.to_csv('temp.csv', index=False)
-        else:
-            chunk.to_csv('temp.csv', index=False, mode='a')
+df = pd.DataFrame(bad_rows, columns=['bad_row_index'])
+df.to_parquet('skip_list.parquet')
             
-    # print error if chunk has bad lines
-    except ValueError as e:
-        print(e)
-        print(chunk.info())
-        print('bad chunk at row {}'.format(i*chunksize))
-        break
