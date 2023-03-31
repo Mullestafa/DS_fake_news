@@ -45,5 +45,8 @@ Other Dependencies
 # How do I execute the code?
 Either download the preprocessed data from above or run the notebooks under the preprocessing folder as followed: Run check-for-bad-lines.py with news_cleaned_2018_02_13.csv(Is not cleaned). Then run remove_bad_lines.py with 
 
+
 Run the baseline-models.ipynb under models with the three files from preprocessing in the folder: Vocab.pkl named as file.pkl, fake_news_cleaned.csv, and fake_news_cleaned_filtered.csv.
+
+
 Run the advanced model comparing_embedding_and_CNN_model.ipynb under models with fake_news_cleaned.csv and fake_news_cleaned_filtered.csv.
