@@ -5,7 +5,7 @@ meanwhile all the models, whether baseline, or advanced will be found in the mod
 
 
 # necesary dependencies
-The repository should include all code that is needed to reproduce the results from the project. Due to size constraints, there are several large files,
+The repository includes all code that is needed to reproduce the results from the project. Due to size constraints, there are several large files,
 which are not included in the repository. This will often result in a file-not-found error when running the different notebooks.
 
 Therefore we provide links to download several large files that where used during the project:
