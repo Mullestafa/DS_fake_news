@@ -1,6 +1,6 @@
 # DS_fake_news
 This is the repository for the Fake News classifier Project, part of the Data Science course at University of Copehagen in 2023, conducted by group 57.
-The different scripts have been seperated into their relevant directories, 
+The different scripts have been seperated into their relevant directories.
 
 
 # necesary dependencies
